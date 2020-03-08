@@ -1,14 +1,4 @@
-import datetime
-import os
-import hashlib
-import sys
-import time
-import threading
-import string
-import random
-import base64
-import urllib.request
-import urllib.parse
+import time, datetime, os, sys, random 
 x = datetime.datetime.now()
 colors = ['\033[1;31m', '\033[1;32m', '\033[1;33m', '\033[1;34m', '\033[1;35m', '\033[1;36m']
 W = '\033[0m'
@@ -31,20 +21,6 @@ def banner():
                                          """
     print(random.choice(colors) + logo + W)
     print("\n")
-
-def checkinternet():
-    res = False
-    try:
-        requests.get('https://www.google.com', verify=True)
-        res = False
-    except Exception:
-        res = True
-    if res:
-        print("\n\n\tIt Looks That Your Internet Speed is Slow....")
-        print('\t\tPBomb Will Stop Now...\n\n')
-        banner()
-        exit()
-        return False
 def start():
     clr()
     banner()
