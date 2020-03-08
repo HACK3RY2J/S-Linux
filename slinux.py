@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-from datetime import datetime
+import datetime
 import os
 import hashlib
 import sys
