@@ -1,5 +1,15 @@
-import time, datetime, os, sys
+#!/usr/bin/env python
+from datetime import datetime
+import os
+import hashlib
+import sys
+import time
+import threading
+import string
 import random
+import base64
+import urllib.request
+import urllib.parse
 x = datetime.datetime.now()
 colors = ['\033[1;31m', '\033[1;32m', '\033[1;33m', '\033[1;34m', '\033[1;35m', '\033[1;36m']
 W = '\033[0m'
@@ -32,7 +42,7 @@ def checkinternet():
         res = True
     if res:
         print("\n\n\tIt Looks That Your Internet Speed is Slow....")
-        print('\t\tS-Linux Will Stop Now...\n\n')
+        print('\t\tPBomb Will Stop Now...\n\n')
         banner()
         exit()
         return False
@@ -52,15 +62,15 @@ def start():
           """
     print(random.choice(colors) + startup + W)
     print()
-    print("\033[92m 1. Kali Linux ")
-    print(" 2. Parrot ")
-    print(" 3. Arch")
-    print(" 4. Kali Nethunter ")
-    print(" 5. Backbox")
-    print(" 6. Alpine")
-    print(" 7. Opensuse-tumbelweed ")
-    print(" 8. Black Arch")
-    print(" 9. Opensuse-leap ")
+    print("\033[92m  1. Kali Linux ")
+    print("  2. Parrot ")
+    print("  3. Arch")
+    print("  4. Kali Nethunter ")
+    print("  5. Backbox")
+    print("  6. Alpine")
+    print("  7. Opensuse-tumbelweed ")
+    print("  8. Black Arch")
+    print("  9. Opensuse-leap ")
     print(" 10. Ubuntu")
     print(" 11. Debian ")
     print(" 12. Fedora ")
@@ -146,4 +156,3 @@ def start():
             "apt install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/CentOS/centos.sh && bash centos.sh")
     else:
         print(" Enter a valid option... ")
-
