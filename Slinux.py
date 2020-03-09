@@ -26,16 +26,14 @@ def start():
     banner()
     print("Tool started at\033[91;107m %s \033[0m " % x.strftime("%X"))
     time.sleep(3)
-    statrup = """
-      ██████████████████████████████████████████████████████████████
-      ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-      ██        Code Made by github.com/HACK3RY2J                 ██
-      ██   Youtube : https://www.youtube.com/c/PandaHackers       ██
-      ██ Instagram : https://instagram.com/Panda_Hackers_Official ██
-      ██████████████████████████████████████████████████████████████
-      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-          """
-    print(random.choice(colors) + startup + W)
+    print("██████████████████████████████████████████████████████████████")
+    print("██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██")
+    print("██        Code Made by github.com/HACK3RY2J                 ██")
+    print("██   Youtube : https://www.youtube.com/c/PandaHackers       ██")
+    print("██ Instagram : https://instagram.com/Panda_Hackers_Official ██")
+    print("██████████████████████████████████████████████████████████████")
+    print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+    print()
     print()
     print("\033[92m  1. Kali Linux ")
     print("  2. Parrot ")
