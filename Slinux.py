@@ -7,6 +7,13 @@ W = '\033[0m'
 # A Special Thanks To https://github.com/EXALAB/ !!
 os.system("clear")
 
+def clr():
+	if os.name == 'nt':
+		os.system('cls')
+	else:
+		os.system('clear')
+
+
 def banner():
     clr()
     logo = """                                                  
